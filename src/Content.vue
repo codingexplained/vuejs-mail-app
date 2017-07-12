@@ -5,7 +5,7 @@
         </div>
 
         <keep-alive>
-            <component :is="currentView.tag"></component>
+            <component :is="currentView.tag" :data="currentView.data"></component>
         </keep-alive>
     </aside>
 </template>
@@ -19,12 +19,21 @@
     import ViewMessage from './ViewMessage.vue';
 
     export default {
+        props: {
+            messages: {
+                type: Array,
+                required: true
+            }
+        },
         data() {
             return {
                 history: [
                     {
                         tag: 'app-inbox',
-                        title: 'Inbox'
+                        title: 'Inbox',
+                        data: {
+                            messages: null
+                        }
                     }
                 ]
             };
@@ -33,7 +42,8 @@
             eventBus.$on('changeView', (data) => {
                 let temp = [{
                     tag: data.tag,
-                    title: data.title
+                    title: data.title,
+                    data: data.data || {}
                 }];
 
                 this.history = temp.concat(this.history.splice(0));
@@ -41,7 +51,9 @@
         },
         computed: {
             currentView() {
-                return this.history[0];
+                let current = this.history[0];
+                current.data.messages = this.messages;
+                return current;
             }
         },
         components: {
