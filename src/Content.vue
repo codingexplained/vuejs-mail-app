@@ -54,6 +54,9 @@
                 let current = this.history[0];
                 current.data.messages = this.messages;
                 return current;
+            },
+            previousView() {
+                return typeof this.history[1] !== 'undefined' ? this.history[1] : null;
             }
         },
         components: {
