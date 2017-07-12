@@ -2,7 +2,7 @@
 
 This repository contains the code for the second example application from the [Vue.js: From Beginner to Professional course](https://www.udemy.com/vuejs-from-beginner-to-professional/?couponCode=GITHUB10&utm_source=github&utm_campaign=vuejs_mail_app&utm_medium=referral).
 
-## Get up and Running
+## Getting up and Running
 
 ``` bash
 # Install the dependencies
