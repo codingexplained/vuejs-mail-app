@@ -4,6 +4,10 @@
             <button class="btn btn-primary" @click="navigateBack">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back
             </button>
+
+            <button class="btn btn-danger" @click="data.message.isDeleted = true" :disabled="data.message.isDeleted">
+                <i class="fa fa-trash-o"></i>&nbsp; {{ data.message.isDeleted ? 'Deleted' : 'Delete' }}
+            </button>
         </div>
 
         <p><strong>Date:</strong> {{ data.message.date.fromNow() }}</p>
