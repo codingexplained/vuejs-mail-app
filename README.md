@@ -1,6 +1,6 @@
 # Vue.js Mail Example Application
 
-This repository contains the code for the second example application from the [Vue.js: From Beginner to Professional course](https://www.udemy.com/vuejs-from-beginner-to-professional/?couponCode=GITHUB10&utm_source=github&utm_campaign=vuejs_mail_app&utm_medium=referral).
+This repository contains the code for the second example application from the [Vue.js: From Beginner to Professional course](https://l.codingexplained.com/course/vuejs?src=github).
 
 ## Getting up and Running
 
