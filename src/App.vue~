@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="mail-box">
-            <app-sidebar :messages="messages" :user="user"></app-sidebar>
+            <app-sidebar :messages="messages"></app-sidebar>
             <app-content :messages="messages"></app-content>
         </div>
     </div>

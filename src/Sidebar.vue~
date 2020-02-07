@@ -1,7 +1,7 @@
 <template>
     <aside class="sm-side">
         <div class="user-head">
-            <img :src="user.avatar">
+            <img src="src/assets/images/profile.jpg">
 
             <div class="user-name">
                 <h5>{{user.name}}</h5>
