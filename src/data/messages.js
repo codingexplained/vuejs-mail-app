@@ -94,7 +94,7 @@ export default [
         date: moment().subtract(7, 'days'),
         from: {
             name: 'Bo Andersen',
-            email: 'info@codingexplained.com'
+            email: 'fake@codingexplained.com'
         },
         attachments: []
     },
@@ -174,7 +174,7 @@ export default [
         date: moment().subtract(100, 'days'),
         from: {
             name: 'Bo Andersen',
-            email: 'info@codingexplained.com'
+            email: 'fake@codingexplained.com'
         },
         attachments: []
     },
@@ -191,7 +191,7 @@ export default [
         date: moment().subtract(4, 'months'),
         from: {
             name: 'Bo Andersen',
-            email: 'info@codingexplained.com'
+            email: 'fake@codingexplained.com'
         },
         attachments: []
     },
@@ -233,7 +233,7 @@ export default [
         date: moment().subtract(6, 'months'),
         from: {
             name: 'Bo Andersen',
-            email: 'info@codingexplained.com'
+            email: 'fake@codingexplained.com'
         },
         attachments: []
     },
